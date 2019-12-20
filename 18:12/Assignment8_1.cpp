@@ -9,15 +9,13 @@ void nhapmang(int ary[],unsigned int n){
 		scanf("%d",&ary[i]);
 	}
 }
-void timso(int a[], unsigned int n,int x){
+bool timso(int a[], unsigned int n,int x){
 	for(int i=0;i<n;i++){
 		if(a[i]==x){
-			printf("So %d o vi tri thu %d \n",x,i);
-			break;
-		}else
-			printf("Khong co so can tim trong mang.\n");
-
+			return true;
+		}
 	}
+	return false;
 }
 int main(){
 	int n;
